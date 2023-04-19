@@ -16,7 +16,7 @@ const NavbarSm = () => {
         </div>
         <div>
           <div onClick={() => setMenu(!menu)}>
-            <HiMenuAlt3 className="text-3xl cursor-pointer text-slate-50" />
+            <HiMenuAlt3 className="text-3xl font-light cursor-pointer text-slate-50" />
           </div>
           <div
             className={`w-full h-20 bg-slate-100 min-h-screen translate transition-all duration-300 transform top-0 ${

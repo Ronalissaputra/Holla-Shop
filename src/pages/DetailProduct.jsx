@@ -30,7 +30,6 @@ const DetailProduct = () => {
         </div>
       ) : (
         <>
-          {" "}
           <div className="flex items-center space-x-2 mt-6">
             <BiArrowBack className="font-bold text-slate-800 text-xl" />
             <Link to="/" className="text-xl text-slate-800">
@@ -52,13 +51,15 @@ const DetailProduct = () => {
                     Price <BsArrowRightShort /> {details.price}
                   </p>
                   <p className="flex items-center">
-                    {" "}
                     Ranting <BsArrowRightShort /> {details.rating}
                   </p>
                   <p className="flex items-center">
                     Stock <BsArrowRightShort /> {details.stock}
                   </p>
                 </div>
+                <button className="bg-indigo-700 w-full py-2 rounded-full mb-2">
+                  <p className="font-light text-xl text-slate-50">Add Card</p>
+                </button>
               </div>
             </div>
           </div>
