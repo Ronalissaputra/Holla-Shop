@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { BiArrowBack } from "react-icons/bi";
+import { BsArrowRightShort } from "react-icons/bs";
 import Layout from "../layouts/Layout";
 
 const DetailProduct = () => {
@@ -36,15 +37,16 @@ const DetailProduct = () => {
           <div className="px-2">
             <p className="text-2xl ">{details.title}</p>
             <p className="text-lg">{details.description}</p>
-            <div className="flex space-x-2 my-2">
-              <p className="bg-indigo-700 p-1 px-5 flex justify-center items-center rounded-full text-slate-50 font-light">
-                $ {details.price}
+            <div className="my-2">
+              <p className="flex items-center">
+                Price <BsArrowRightShort /> {details.price}
               </p>
-              <p className="bg-indigo-700 p-1 px-5 flex justify-center items-center rounded-full text-slate-50 font-light">
-                Ranting {details.rating}
+              <p className="flex items-center">
+                {" "}
+                Ranting <BsArrowRightShort /> {details.rating}
               </p>
-              <p className="bg-indigo-700 p-1 px-5 flex justify-center items-center rounded-full text-slate-50 font-light">
-                Stock {details.stock}
+              <p className="flex items-center">
+                Stock <BsArrowRightShort /> {details.stock}
               </p>
             </div>
           </div>

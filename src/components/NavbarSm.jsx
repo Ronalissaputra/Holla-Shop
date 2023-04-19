@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { GrFormClose } from "react-icons/gr";
+import { BiHomeAlt2 } from "react-icons/bi";
+import { TbBrandAppgallery } from "react-icons/tb";
+import { HiOutlineShoppingBag } from "react-icons/hi";
 
 const NavbarSm = () => {
   const [menu, setMenu] = useState(false);
@@ -28,11 +31,16 @@ const NavbarSm = () => {
                 </div>
               </div>
               <div className="mt-20 flex flex-col space-y-6 items-center justify-center">
-                <Link to="/" className="text-2xl">
-                  Beranda
+                <Link to="/" className="text-2xl flex items-center">
+                  <BiHomeAlt2 className="mr-3 text-3xl" /> Beranda
                 </Link>
-                <Link to="/product" className="text-2xl">
+                <Link to="/product" className="text-2xl flex items-center">
+                  <TbBrandAppgallery className="mr-3 text-3xl" />
                   Product
+                </Link>
+                <Link to="/product" className="text-2xl flex items-center">
+                  <HiOutlineShoppingBag className="mr-3 text-3xl" />
+                  Cart
                 </Link>
               </div>
             </div>
