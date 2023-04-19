@@ -31,7 +31,7 @@ const DetailProduct = () => {
       ) : (
         <>
           {" "}
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2 mt-6">
             <BiArrowBack className="font-bold text-slate-800 text-xl" />
             <Link to="/" className="text-xl text-slate-800">
               Kembali
