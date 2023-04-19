@@ -1,12 +1,13 @@
 import React from "react";
-import { NavbarApp } from "../components";
+import { NavbarLg, NavbarSm } from "../components";
 
 const Layout = (props) => {
   return (
-    <div>
-      <NavbarApp />
-      {props.children}
-    </div>
+    <>
+      <NavbarLg />
+      <NavbarSm />
+      <div className="mx-2">{props.children}</div>
+    </>
   );
 };
 

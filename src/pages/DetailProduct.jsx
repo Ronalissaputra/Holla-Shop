@@ -20,7 +20,7 @@ const DetailProduct = () => {
 
   return (
     <Layout>
-      <div className="flex items-center m-2 space-x-2">
+      <div className="flex items-center space-x-2">
         <BiArrowBack className="font-bold text-slate-800 text-xl" />
         <Link to="/" className="text-xl text-slate-800">
           Kembali

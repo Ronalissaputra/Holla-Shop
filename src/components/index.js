@@ -1,3 +1,4 @@
-import NavbarApp from "./NavbarApp";
+import NavbarLg from "./NavbarLg";
+import NavbarSm from "./NavbarSm";
 
-export { NavbarApp };
+export { NavbarLg, NavbarSm };
