@@ -39,7 +39,12 @@ const NavbarSm = () => {
                   Product
                 </Link>
                 <Link to="/product" className="text-2xl flex items-center">
-                  <HiOutlineShoppingBag className="mr-3 text-3xl" />
+                  <div className="relative">
+                    <p className="top-[-4px] left-5 absolute text-slate-100 px-2 bg-red-500 flex items-center justify-center rounded-full text-sm">
+                      2
+                    </p>
+                    <HiOutlineShoppingBag className="mr-3 text-4xl" />
+                  </div>
                   Cart
                 </Link>
               </div>
